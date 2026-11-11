@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Equipo 03 · Comando Estelar Sinaloa</title>
+  <meta name="description" content="Equipo 03 de Comando Estelar en Sinaloa. Al infinito… y más allá. Conoce a la tripulación, nuestras misiones y cómo unirte al despegue.">
+  <meta name="theme-color" content="#050B24">
+  <meta property="og:title" content="Equipo 03 · Comando Estelar Sinaloa">
+  <meta property="og:description" content="¡Al infinito… y más allá! Conoce a la tripulación del Equipo 03.">
+  <meta property="og:image" content="assets/img/logo-vertical.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Saira+Condensed:ital,wght@0,600;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <canvas id="estrellas" aria-hidden="true"></canvas>
+  <div id="cohetes" aria-hidden="true"></div>
+
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+
+  <header class="barra">
+    <a class="barra__marca" href="#inicio" aria-label="Comando Estelar, inicio">
+      <img src="assets/img/favicon-32.png" alt="" width="32" height="32">
+      <span>Comando Estelar</span>
+    </a>
+    <button class="barra__menu" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="barra__nav">
+      <a href="#mision">Misión</a>
+      <a href="#tripulacion">Tripulación</a>
+      <a href="#ruta">Ruta de vuelo</a>
+      <a href="#lanzamiento">Lanzamiento</a>
+      <a class="barra__cta" href="#contacto">Únete</a>
+    </nav>
+  </header>
+
+  <main id="principal">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__texto">
+        <p class="hero__equipo">Equipo 03 · Sinaloa</p>
+        <h1 class="hero__titulo">
+          <span class="linea">¡Al infinito…</span>
+          <span class="linea linea--morada">y más allá!</span>
+        </h1>
+        <p class="hero__bajada">Somos el Equipo 03 de Comando Estelar. Despegamos desde Sinaloa con un solo plan: aprender, construir y llegar más lejos que la última misión.</p>
+        <div class="hero__acciones">
+          <a class="boton boton--verde" href="#lanzamiento">Ver cuenta regresiva</a>
+          <a class="boton boton--linea" href="#tripulacion">Conocer la tripulación</a>
+        </div>
+      </div>
+      <div class="hero__logo">
+        <div class="halo" aria-hidden="true"></div>
+        <img src="assets/img/logo-vertical.png" alt="Escudo de Comando Estelar con un cohete y los colores verde y morado" width="682" height="703">
+      </div>
+    </section>
+
+    <!-- FRANJA -->
+    <div class="franja" aria-hidden="true">
+      <div class="franja__pista">
+        <span>Al infinito y más allá</span><span>Equipo 03</span><span>Comando Estelar</span><span>Sinaloa</span>
+        <span>Al infinito y más allá</span><span>Equipo 03</span><span>Comando Estelar</span><span>Sinaloa</span>
+      </div>
+    </div>
+
+    <!-- MISIÓN -->
+    <section class="seccion" id="mision">
+      <div class="seccion__cabeza">
+        <h2>Nuestra misión</h2>
+        <p>Un equipo, tres reglas de vuelo. Así trabajamos cada día desde la base.</p>
+      </div>
+      <div class="mision">
+        <article class="tarjeta tarjeta--grande">
+          <h3>Explorar</h3>
+          <p>Vamos por lo que nadie en la zona ha probado. Cada idea nueva es un planeta por descubrir, y nos gusta aterrizar primero.</p>
+        </article>
+        <article class="tarjeta tarjeta--morada">
+          <h3>Construir</h3>
+          <p>Del plano al despegue: prototipos, proyectos y resultados que se pueden tocar.</p>
+        </article>
+        <article class="tarjeta tarjeta--blanca">
+          <h3>Volar juntos</h3>
+          <p>Ningún cohete llega solo. La tripulación se apoya en cada tramo del viaje.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TRIPULACIÓN -->
+    <section class="seccion seccion--oscura" id="tripulacion">
+      <div class="seccion__cabeza">
+        <h2>La tripulación</h2>
+        <p>Cinco puestos, un mismo rumbo. Reemplaza estos datos con los de tu equipo.</p>
+      </div>
+      <ul class="tripulacion">
+        <li class="cadete cadete--cmd">
+          <div class="cadete__foto" role="img" aria-label="Foto del comandante">CE</div>
+          <h3>Nombre del integrante</h3>
+          <p class="cadete__rango">Comandante de misión</p>
+          <p>Marca el rumbo y mantiene al equipo enfocado.</p>
+        </li>
+        <li class="cadete">
+          <div class="cadete__foto" role="img" aria-label="Foto del piloto">CE</div>
+          <h3>Nombre del integrante</h3>
+          <p class="cadete__rango">Piloto</p>
+          <p>Convierte el plan en movimiento.</p>
+        </li>
+        <li class="cadete">
+          <div class="cadete__foto" role="img" aria-label="Foto del ingeniero de vuelo">CE</div>
+          <h3>Nombre del integrante</h3>
+          <p class="cadete__rango">Ingeniería de vuelo</p>
+          <p>Hace que todo funcione antes del despegue.</p>
+        </li>
+        <li class="cadete">
+          <div class="cadete__foto" role="img" aria-label="Foto del navegante">CE</div>
+          <h3>Nombre del integrante</h3>
+          <p class="cadete__rango">Navegación</p>
+          <p>Encuentra la ruta más corta a la meta.</p>
+        </li>
+        <li class="cadete">
+          <div class="cadete__foto" role="img" aria-label="Foto de comunicaciones">CE</div>
+          <h3>Nombre del integrante</h3>
+          <p class="cadete__rango">Comunicaciones</p>
+          <p>Cuenta la historia del equipo a toda la galaxia.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- RUTA DE VUELO -->
+    <section class="seccion" id="ruta">
+      <div class="seccion__cabeza">
+        <h2>Ruta de vuelo</h2>
+        <p>Las cuatro fases de cada misión del Equipo 03.</p>
+      </div>
+      <ol class="ruta">
+        <li>
+          <h3>Preparación</h3>
+          <p>Definimos el objetivo, repartimos puestos y revisamos el equipo.</p>
+        </li>
+        <li>
+          <h3>Despegue</h3>
+          <p>Arrancamos motores: primeras pruebas y primeros resultados.</p>
+        </li>
+        <li>
+          <h3>Órbita</h3>
+          <p>Ajustamos, medimos y mejoramos hasta que todo gira sin tropiezos.</p>
+        </li>
+        <li>
+          <h3>Aterrizaje</h3>
+          <p>Presentamos la misión cumplida y anotamos lo aprendido para la siguiente.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- LANZAMIENTO -->
+    <section class="seccion seccion--lanzamiento" id="lanzamiento">
+      <div class="seccion__cabeza">
+        <h2>Próximo lanzamiento</h2>
+        <p id="lanzamiento-texto">Despegue en:</p>
+      </div>
+      <div class="reloj" role="timer" aria-live="off">
+        <div><strong id="t-dias">00</strong><span>días</span></div>
+        <div><strong id="t-horas">00</strong><span>horas</span></div>
+        <div><strong id="t-min">00</strong><span>minutos</span></div>
+        <div><strong id="t-seg">00</strong><span>segundos</span></div>
+      </div>
+      <p class="reloj__nota" id="reloj-nota"></p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="seccion" id="contacto">
+      <div class="contacto">
+        <div>
+          <h2>¿Listo para abordar?</h2>
+          <p>Escríbenos y suma tu energía al Equipo 03. Hay lugar en la nave para quien quiera llegar lejos.</p>
+          <ul class="redes" id="redes"></ul>
+        </div>
+        <img class="contacto__logo" src="assets/img/logo-horizontal.png" alt="Comando Estelar" width="1765" height="608">
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>© <span id="anio">2026</span> Equipo 03 · Comando Estelar Sinaloa</p>
+    <p class="pie__nota">Los cohetes del fondo son diseños originales con espíritu aventurero, una parodia sin relación con ningún personaje o película.</p>
+    <a href="assets/img/kit-identidad.png">Kit de identidad visual</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
